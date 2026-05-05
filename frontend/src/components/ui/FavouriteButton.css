@@ -1,0 +1,81 @@
+.fav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  flex-shrink: 0;
+}
+
+.fav-btn svg {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.fav-btn:hover {
+  border-color: #f43f5e;
+  color: #f43f5e;
+  background: rgba(244, 63, 94, 0.08);
+  transform: scale(1.1);
+}
+
+.fav-btn:hover svg {
+  transform: scale(1.15);
+}
+
+.fav-btn--active {
+  border-color: #f43f5e;
+  color: #f43f5e;
+  background: rgba(244, 63, 94, 0.1);
+}
+
+.fav-btn--active:hover {
+  background: rgba(244, 63, 94, 0.18);
+}
+
+.fav-btn--loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Sizes */
+.fav-btn--sm {
+  width: 30px;
+  height: 30px;
+}
+.fav-btn--sm svg {
+  width: 14px;
+  height: 14px;
+}
+
+.fav-btn--md {
+  width: 36px;
+  height: 36px;
+}
+.fav-btn--md svg {
+  width: 17px;
+  height: 17px;
+}
+
+.fav-btn--lg {
+  width: 44px;
+  height: 44px;
+}
+.fav-btn--lg svg {
+  width: 21px;
+  height: 21px;
+}
+
+/* Pop animation on toggle */
+.fav-btn--active svg {
+  animation: heartPop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes heartPop {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
