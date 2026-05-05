@@ -273,3 +273,10 @@ Then log in again — the admin panel will appear in the navbar.
 ## 📝 License
 
 MIT — free for personal and commercial use.
+
+
+CONTACT DETAILS:
+NAME: MUGI S,
+CONTACT NO : 8939243452,
+EMAIL: MUGIL1504@GMAIL.COM
+
